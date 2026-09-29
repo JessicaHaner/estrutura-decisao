@@ -50,3 +50,15 @@ function imparPar(){
 
 
 }
+function valoresIguais() {
+    let a = parseInt(prompt("Digite um número:"));
+    let b = parseInt(prompt("Digite outro número:"));
+
+    if (a===b) {
+        let c = a + b;
+        alert("A soma de A + B é: " + c);
+    } else {
+        let c = a * b;
+        alert("O produto de A * B é: " + c);
+    }
+}
