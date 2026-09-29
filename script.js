@@ -61,4 +61,15 @@ function valoresIguais() {
         let c = a * b;
         alert("O produto de A * B é: " + c);
     }
+
 }
+ function valorPositivoNegativo() {
+        let num = Number(prompt("Digite um número positivo ou negativo:"));
+        if(num < 0) {
+        let resultado = num * 3;
+        alert("O triplo de " + " é: " + resultado);
+    } else {
+        let resultado = num * 2;
+        alert("O dobro de " + num + "é: " + resultado);
+        }
+    }
