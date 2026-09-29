@@ -14,7 +14,7 @@ else {
 
 function tempoCasamento() {
     let nome = String(prompt("Digite seu nome:")).toUpperCase();
-    let genero = String(prompt("Qual seu gênero? M ou F")). toUpperCase();
+    let genero = String(prompt("Qual seu gênero? M ou F")).toUpperCase();
     let estadoCivil = String(prompt("Qual seu estado civil? Solteiro(a) ou Casado(a)?")).toUpperCase();
     console.log(`
         ===========
@@ -36,5 +36,17 @@ function tempoCasamento() {
 
             `);
     }
+
+}
+
+function imparPar(){
+    let numero = Number(prompt("Digite um número:"));
+    if (numero % 2 === 0) {
+     alert("O número é par");
+    } else {
+        alert("O número é impar");
+    }
+
+
 
 }
