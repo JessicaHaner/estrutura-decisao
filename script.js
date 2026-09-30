@@ -67,9 +67,37 @@ function valoresIguais() {
         let num = Number(prompt("Digite um número positivo ou negativo:"));
         if(num < 0) {
         let resultado = num * 3;
-        alert("O triplo de " + " é: " + resultado);
+        alert("O triplo de " + num + " é: " + resultado);
     } else {
         let resultado = num * 2;
         alert("O dobro de " + num + "é: " + resultado);
         }
     }
+function ordenarDecrescente() {
+    let a = parseInt(prompt("Digite o valor de a:"));
+    let b = parseInt(prompt("Digite o valor de b:"));
+    let c = parseInt(prompt("Digite o valor de c:"));
+
+    if (a > b && a > c) {
+        if (b>c) {
+            alert(`${a}, ${b}, ${c}`);
+        } else{
+            alert(`${a}, ${c}, ${b}`);
+        }
+
+     } else if (b > a && b > c) {
+        if (c>a) {
+            alert(`${b}, ${c}, ${a}`);
+        } else {
+            alert(`${b}, ${a}, ${c}`);
+        }
+     } else {
+        if (b>a) {
+            alert(`${c}, ${b}, ${a}`); 
+        } else {
+            alert(`${c}, ${a}, ${b}`);
+        }
+     }
+
+
+}
