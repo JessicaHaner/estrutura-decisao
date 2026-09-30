@@ -101,3 +101,50 @@ function ordenarDecrescente() {
 
 
 }
+function pesoIdeal() {
+    let altura = parseFloat(prompt("Digite sua altura: (Ex.: 1.80"));
+    let genero = prompt("Digite seu Gênero: (Ex.: M ou F)").toUpperCase();
+    let pesoIdeal;
+
+    switch (genero) {
+        case "M":
+            pesoIdeal = (72.7 * altura) - 58;
+            break;
+        case "F":
+            pesoIdeal = (62.1 * altura) - 44.7;
+            break;
+        default:
+            alert("Gênero inmformado é inválido!");
+            return;
+
+    }
+    alert(`O peso ideal é ${pesoIdeal.toFixed(2)} kg.`)
+
+
+}
+function descobrirImc() {
+    let peso = parseFloat(prompt("Digite seu peso: (Ex.: 75.2)"));
+    let altura = parseFloat(prompt("Digite sua altura: (Ex.: 1.75)"));
+    const imc = peso / (altura **2);
+    let condicao;
+
+    switch (true) {
+        case imc < 18.5:
+            condicao = "abaixo do peso";
+            break;
+        case imc >= 18.5 && imc < 25:
+        condicao = "Peso normal";
+        break;
+        case imc >= 25 && imc < 30:
+            condicao = "Acima do peso";
+            break;
+        case imc >= 30:
+            condicao = "Obeso";
+            break;
+    } default:
+    alert("Impossível calcular o IMC com os dados definidos!");
+    alert(`
+        IMC: ${imc.toFixed(2)}
+        condicao: ${condicao}
+        `)
+}
